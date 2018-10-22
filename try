@@ -1,0 +1,33 @@
+dict = {}
+dict['北京'] = {}
+dict['东京'] = {}
+
+dict['北京']['2017'] = []
+dict['北京']['2018'] = []
+dict['东京']['2017'] = []
+dict['东京']['2018'] = []
+
+dict['北京']['2017'].append(321)
+dict['北京']['2017'].append(123)
+
+dict['北京']['2018'].append(333)
+dict['北京']['2018'].append(444)
+
+#dict['东京']['2017'].append(10)
+#dict['东京']['2017'].append(10)
+dict['东京']['2018'].append(20)
+dict['东京']['2018'].append(20)
+
+print(len(dict['东京']['2017']))
+
+for i in dict:
+	for j in dict[i]:
+		print(dict[i][j])
+		dict[i][j] = sum(dict[i][j])/len(dict[i][j])
+		print(dict[i][j])
+
+			
+
+
+
+
